@@ -82,7 +82,7 @@ module.exports = function(grunt) {
     copy: {
       bootstrap: {
         expand: true,
-        cwd: 'bower_components/bootstrap/dist/',
+        cwd: 'app/bower_components/bootstrap/dist/',
         src: '**',
         dest: '<%= config.dist %>/assets/'
       },
@@ -101,6 +101,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('assemble');
+
 
   grunt.registerTask('server', [
     'build',
